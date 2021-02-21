@@ -6,7 +6,7 @@ public final class President {
   private President() {}
 
   public static President getInstance() {
-    if(instance == null) return instance;
-    return new President();
+    if(instance == null) instance = new President();
+    return instance;
   }
 }
